@@ -682,10 +682,118 @@ select
 				left: -60px
 			&.owl-next
 				right: -60px	
+.main-footer
+	background-color: #242424
+	padding: 3% 0 
+	color: #ffffff
+	font-size: 14px
+
+.footer-column
+	margin: 15px 0
+.logo-footer
+	width: 125px
+	height: auto
+	+ p
+		color: #666		
+		padding: 0
+		margin-bottom: 15px
+		margin-top: 15px
+		font-size: 14px
+.social-footer
+	margin-top: 38px
+	.soc
+		li
+			display: inline-block
+			margin: 3px	
+		a
+			color: #ababab	
+			margin-bottom: 0	
+			transition: color .5s ease, background-color .5s ease	
+			&:hover
+				color: rgba(#fff, .8)
+.footer-menu
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li.active
+			a
+				color: $accent
+				&::before
+					color: $accent
+		a
+			color: #979797
+			transition: color .25s ease 
+			display: inline-block
+			padding: 4px 0 
+			text-decoration: underline
+			padding-left: 20px
+			position: relative
+			&:hover, &:focus
+				color: $accent
+				&::before
+					color: $accent
+			&::before
+				position: absolute
+				font-family: fontawesome
+				content: '\f219'
+				left: 0
+				font-size: 12px
+				transition: color .5s ease
+				top: 6px
+				margin-right: 12px
+				color: #ffffff
+.footer-addr
+	position: relative
+	font-size: 15px
+	padding-left: 24px
+	margin: 0 0 20px
+	.fa
+		position: absolute
+		left: 0
+		top: 5px
+		font-size: 18px
+		color: #555
+	.footer-phone
+		font-size: 26px
+		font-family: firasans, sans-serif
+		padding-top: 10px
+		display: block
+		white-space: nowrap
+		.fa 
+			top: 22px
+			font-size: 24px
+			left: 2px
+.map
+	min-height: 200px
+	opacity: .7
+	transition: opacity .5s ease
+	&:hover
+		opacity: 1
 
 
+.top
+	position: fixed
+	bottom: 25px
+	right: -100px
+	background-color: #e0e0e0
+	z-index: 12
+	border-radius: 10em
+	color: #666
+	font-size: 26px
+	width: 50px
+	height: 50px
+	text-align: center
+	line-height: 50px
+	cursor: pointer
+	transition: all .3s ease
+	opacity: 0.5
+	
+	&:hover
+		color: #ffffff
+		background-color: $accent
+		opacity: 1
 
-					
 
 
 @import "media" // Всегда в конце
